@@ -1,0 +1,203 @@
+/* ========================================
+   PREDICTION FORM STYLES
+========================================= */
+.price-input:focus {
+    transition: none ! important;
+}
+
+/* Smooth chart container */
+.preview-chart {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.preview-chart:not(.active) {
+    opacity: 0.5;
+    transform: scale(0.98);
+}
+
+/* Form Enhancements */
+.prediction-form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.price-input {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.price-input:focus {
+    background-color: #f8f9fa;
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Quick Fill Buttons */
+.quick-fill-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin:  1.5rem 0;
+}
+
+.quick-fill-section .btn {
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.quick-fill-section .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Chart Preview */
+.preview-chart {
+    background: #fff;
+    border:  2px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.preview-chart.active {
+    border-color:  #28a745;
+    border-style: solid;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.1);
+}
+
+/* Result Page */
+.result-container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.prediction-result {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.2);
+}
+
+.prediction-result h1 {
+    font-size:  3rem;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.trend-badge {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin:  1rem 0;
+}
+
+.model-info {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.model-stat {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.model-stat h6 {
+    color: #6c757d;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.model-stat strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.btn-download {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+}
+
+.btn-share {
+    background: linear-gradient(135deg, #17a2b8 0%, #6f42c1 100%);
+    color: white;
+    border: none;
+}
+
+/* Responsive Prediction */
+@media (max-width: 768px) {
+    .prediction-result h1 {
+        font-size: 2.2rem;
+    }
+    
+    .model-stat {
+        margin-bottom: 1rem;
+    }
+    
+    .action-buttons {
+        text-align: center;
+    }
+    
+    .action-buttons .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    /* Fixed chart container */
+.preview-chart {
+    background: #fff;
+    border:  2px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 1. 5rem;
+    transition: all 0.3s ease;
+    min-height: 200px; /* Prevent collapse */
+}
+
+.preview-chart.active {
+    border-color: #28a745;
+    border-style: solid;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.1);
+}
+
+/* Chart canvas container */
+#inputChart {
+    max-height: 200px ! important;
+    width: 100% !important;
+}
+
+/* Input validation styles */
+.price-input.valid {
+    border-color: #28a745 !important;
+    background-color: #f8fff9 !important;
+}
+
+.price-input.invalid {
+    border-color: #dc3545 !important;
+    background-color: #fff5f5 ! important;
+}
+    
+}
