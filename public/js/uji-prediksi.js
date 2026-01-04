@@ -10,6 +10,10 @@ function loadUjiPrediksi(region = 'surabaya', month = 'all') {
     currentRegion = region;
     currentMonth = month;
     
+    // Show containers now that user has selected a region
+    document.getElementById('chartContainer').style.display = 'block';
+    document.getElementById('tableContainer').style.display = 'block';
+    
     // Show loading for chart
     if (document.getElementById('chartLoading')) {
         document.getElementById('comparisonChart').style.display = 'none';
@@ -226,8 +230,6 @@ function resetFilter() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if uji prediksi table exists
-    if (document.getElementById('ujiPrediksiTable')) {
-        loadUjiPrediksi('surabaya'); // Default region
-    }
+    // Don't auto-load - wait for user to select a region
+    console.log('Data Uji Prediksi page loaded. Select a region to view data.');
 });

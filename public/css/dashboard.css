@@ -4,7 +4,7 @@
 
 /* Stats Cards */
 .card-stats {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #14919b 0%, #0d7377 100%);
     color: white;
     border:  none;
     position: relative;
@@ -157,4 +157,58 @@
     .region-btn:hover {
         transform: none;
     }
+}
+
+/* Additional Mobile Fixes */
+@media (max-width: 767px) {
+    .list-group-item {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    #priceChart {
+        max-height: 300px;
+    }
+    
+    .card-header h5 {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-stats h3 {
+        font-size: 1.75rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .card-stats p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Custom Teal Button Styles */
+.btn-outline-teal {
+    color: #14919b;
+    border-color: #14919b;
+}
+
+.btn-outline-teal:hover {
+    color: white;
+    background-color: #14919b;
+    border-color: #14919b;
+}
+
+.btn-outline-teal.active,
+.btn-outline-teal:active {
+    color: white;
+    background-color: #0d7377;
+    border-color: #0d7377;
 }

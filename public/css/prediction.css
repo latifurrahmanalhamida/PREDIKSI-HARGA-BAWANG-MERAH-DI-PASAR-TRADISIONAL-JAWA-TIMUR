@@ -1,6 +1,127 @@
 /* ========================================
    PREDICTION FORM STYLES
 ========================================= */
+
+/* Input Mode Tabs - Custom Design */
+.input-mode-tabs {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.btn-input-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+.btn-input-mode i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.btn-input-mode span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    display: block;
+}
+
+.btn-input-mode small {
+    font-size: 0.75rem;
+    color: #6c757d;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.btn-input-mode:hover {
+    border-color: #14919b;
+    background: #f0fffe;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(20, 145, 155, 0.15);
+}
+
+.btn-input-mode:hover i {
+    color: #14919b;
+}
+
+.btn-input-mode.active {
+    border-color: #14919b;
+    background: linear-gradient(135deg, #14919b 0%, #0d7377 100%);
+    box-shadow: 0 4px 15px rgba(20, 145, 155, 0.3);
+}
+
+.btn-input-mode.active i,
+.btn-input-mode.active span {
+    color: #fff;
+}
+
+.btn-input-mode.active small {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Upload Zone */
+.upload-zone {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    transition: all 0.3s ease;
+}
+
+.upload-zone:hover {
+    border-color: #14919b;
+    background: linear-gradient(135deg, #f0fffe 0%, #fff 100%);
+}
+
+.upload-zone .upload-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, #14919b 0%, #0d7377 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-zone .upload-icon i {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.upload-zone h5 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.upload-info {
+    background: #e7f8f9;
+    border: 1px solid #b8e8eb;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.upload-info i {
+    color: #14919b;
+}
+
 .price-input:focus {
     transition: none ! important;
 }
@@ -17,19 +138,27 @@
 
 /* Form Enhancements */
 .prediction-form {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .price-input {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    height: auto;
+}
+
+.input-group-lg .input-group-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
 }
 
 .price-input:focus {
     background-color: #f8f9fa;
-    border-color: #28a745;
-    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    border-color: #14919b;
+    box-shadow: 0 0 0 0.2rem rgba(20, 145, 155, 0.25);
 }
 
 /* Quick Fill Buttons */

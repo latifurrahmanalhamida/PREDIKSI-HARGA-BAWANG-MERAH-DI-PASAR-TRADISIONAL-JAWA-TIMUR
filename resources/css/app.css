@@ -3,14 +3,14 @@
 ========================================= */
 
 :root {
-    --primary-color: #667eea;
-    --primary-dark: #764ba2;
-    --success-color: #28a745;
+    --primary-color: #14919b;
+    --primary-dark: #0d7377;
+    --success-color: #1ba39c;
     --danger-color: #dc3545;
     --warning-color: #ffc107;
     --info-color: #17a2b8;
     --light-color: #f8f9fa;
-    --dark-color: #343a40;
+    --dark-color: #0d3f3f;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;

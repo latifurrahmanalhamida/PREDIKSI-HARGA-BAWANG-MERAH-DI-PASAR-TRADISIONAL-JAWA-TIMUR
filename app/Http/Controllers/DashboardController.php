@@ -222,10 +222,9 @@ class DashboardController extends Controller
         $query = \App\Models\DataUjiPrediksi::where('region', $region)
             ->orderBy('tanggal', 'asc');
         
-        // Filter by month if specified
+        // Filter by month if specified (all years)
         if ($month !== 'all') {
-            $query->whereMonth('tanggal', $month)
-                  ->whereYear('tanggal', 2024);
+            $query->whereMonth('tanggal', $month);
         }
         
         $data = $query->get();

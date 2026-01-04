@@ -126,12 +126,12 @@
                         </a>
                     </div>
                     <div>
-                        <button class="btn btn-success btn-download" onclick="downloadResult()">
+                        <!-- <button class="btn btn-success btn-download" onclick="downloadResult()">
                             <i class="bi bi-download"></i> Download PDF
                         </button>
                         <button class="btn btn-outline-info btn-share" onclick="shareResult()">
                             <i class="bi bi-share"></i> Share
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>

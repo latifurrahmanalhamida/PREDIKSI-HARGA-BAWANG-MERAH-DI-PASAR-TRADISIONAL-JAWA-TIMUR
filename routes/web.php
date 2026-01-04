@@ -28,6 +28,8 @@ Route::get('/uji-prediksi', [DashboardController::class, 'getUjiPrediksi']);
 // Prediction Routes
 Route::get('/prediction', [PredictionController::class, 'index'])->name('prediction.form');
 Route::post('/prediction', [PredictionController::class, 'predict'])->name('prediction.predict');
+// AJAX: Upload/parse Excel harga prediksi
+Route::post('/prediction/upload-excel', [\App\Http\Controllers\PredictionExcelController::class, 'parse'])->name('prediction.upload_excel');
 
 // Import Routes
 Route::get('/import', [ImportController::class, 'showForm'])->name('import.form');
