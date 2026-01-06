@@ -71,7 +71,7 @@
                             <!-- Manual Input Tab -->
                             <div class="tab-pane fade show active" id="manualInput" role="tabpanel" aria-labelledby="manual-tab">
                                 <label class="form-label">
-                                    <i class="bi bi-graph-up"></i> Masukkan Harga 7 Hari Terakhir (Rupiah):
+                                    <i class="bi bi-graph-up"></i> Masukkan Harga 7 Hari Terakhir (Rupiah).
                                 </label>
                                 <div class="alert alert-info">
                                     <i class="bi bi-info-circle-fill"></i> 
